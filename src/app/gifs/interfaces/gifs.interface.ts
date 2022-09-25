@@ -141,14 +141,3 @@ export interface Pagination {
     count:       number;
     offset:      number;
 }
-
-// Converts JSON strings to/from your types
-export class Convert {
-    public static toSearchGIFResponse(json: string): SearchGIFResponse {
-        return JSON.parse(json);
-    }
-
-    public static searchGIFResponseToJson(value: SearchGIFResponse): string {
-        return JSON.stringify(value);
-    }
-}
